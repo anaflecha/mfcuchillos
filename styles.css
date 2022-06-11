@@ -98,23 +98,37 @@ body {
     padding: 12px;
     margin-top: 1rem;
     gap: 2rem;*/
-   
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
-    flex-direction: row;
-    gap: 1rem;
+    /*gap: 2rem;*/
     justify-content: center;
-    padding: 4rem;*/
+    padding: 4rem;
    
 }
+.boxhome .card1 {
+    display: grid;
+    font-size: 3em;
+    padding: 1em;
+   align-self: center;
+    
+}
+.boxhome .card2 {
+    display: grid;
+    font-size: 3em;
+    padding: 1em;
+   align-self: center;
+}
+.boxhome picture {
+    max-width: 500px;
+}  
 .boxhome .imagen:nth-of-type(1) {
     grid-column: 1;
     grid-row: 1;
+    
 }
 .boxhome .card1:nth-of-type(2) {
-    grid-column:2 ;
+    grid-column:2;
     grid-row: 1;
 
 }
@@ -126,6 +140,7 @@ body {
 .boxhome .imagen:nth-of-type(4) {
     grid-column: 2;
     grid-row: 2;
+  
 }
 /* Ale! No me doy cuenta como poner el texto para que se adapte al tamaño de su caja*/
 
@@ -288,6 +303,13 @@ max-width: 3.6em;
     justify-content: center;
     margin-top: 1rem;
 
+}
+.box:hover { 
+    transform: scale(1.1);
+
+}
+.box {
+    transition: 1s;
 }
 .cards .box:nth-of-type(1) {
     grid-column: 1/5;
