@@ -1,0 +1,26 @@
+.menu {
+    background-color: var(--secondary);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--spacing-xsmall);
+    position: relative;
+    .menu__logo {
+        flex-basis: 40%;}
+        .menu__logo img {
+            max-width: 300px;}
+            .menu__logo a {
+                text-decoration: none;}
+             .menu__item {
+              list-style: none;
+              font-size: var(--text-medium);
+              font-weight: var(--medium);
+                 display: inline;
+                  align-items: center;
+               gap: 1rem;}
+        .menu__item a {
+            text-decoration: none;}
+            .menu__item--active {
+                color: var(--active)}
+            }
