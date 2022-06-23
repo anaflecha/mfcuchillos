@@ -69,3 +69,34 @@ a:hover {
     text-decoration: none; }
   .menu .menu__item--active {
     color: var(--active); }
+
+/*Views*/
+.boxhome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  padding: var(--spacing-medium); }
+  .boxhome .card1 {
+    display: grid;
+    align-self: center; }
+  .boxhome .card2 {
+    display: grid;
+    align-self: center; }
+  .boxhome picture {
+    max-width: 500px; }
+  .boxhome .boxhome__item__text {
+    font-size: var(--text-large);
+    padding: var(--spacing-medium); }
+  .boxhome .imagen:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 1; }
+  .boxhome .card1:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1; }
+  .boxhome .card2:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 2; }
+  .boxhome .imagen:nth-of-type(4) {
+    grid-column: 2;
+    grid-row: 2; }
