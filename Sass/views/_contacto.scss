@@ -1,0 +1,79 @@
+/* Forms*/
+.titulo__seccion {
+    font-size: $text-large;
+    font-weight: $bold;
+    padding: $spacing-small 0 $spacing-xsmall 0;
+    border-bottom: solid 8px $primary;}
+.forms {
+    background-color: $secondary;  
+    padding: $spacing-small;
+    display: block; 
+    align-items: center;
+  
+     .forms__datos {
+    display: flex;
+    max-width: 1200vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content:flex-start ;
+    flex-wrap: nowrap;
+    padding: $spacing-large;
+    font-size: $text-medium;
+    font-weight: $bold;}  
+
+     .inputs {
+    border-radius: 6px;
+    border-color: $primary;
+    background-color:$secondary;
+    gap: 2rem;
+    font-family:$font-text;
+    font-size: $text-xsmall;
+    min-width: 40%;
+    min-height: 4rem;
+}
+     label {
+    font-size: $text-small;
+    font-weight: $bold;
+}
+
+      .button {
+        font-size: $text-small;
+        font-weight: $bold;
+        background-color: $active;
+        border-radius: 8px;
+        border-color:$active;
+        max-width: 3.6em;
+
+} }
+
+.contacto {
+    background-color:$secondary;
+    display: block;
+    gap: 2rem;
+    padding: $spacing-small;
+    
+    
+
+.contacto__datos {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: $spacing-small $spacing-medium;
+}
+.contacto__datos {
+    display: flex;
+    align-items: center;
+    font-size: $text-medium;
+    font-family: $font-text;
+    font-weight:$medium ;
+
+}
+.contacto__datos img {
+    display: flex;
+    flex-direction: row;
+    max-width: 3rem;
+    min-width: 1rem;
+}
+}

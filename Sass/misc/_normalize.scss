@@ -1,7 +1,7 @@
-/*Normalize*/
+/* Normalize*/
 * {
-    font-family: var(--font-title);
-    color: var(--primary);
+    font-family: $font-title;
+    color: $primary;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,12 +11,7 @@
        font-size: 62.5%;
    }
    
-   header {
-      background-image: url(./img/textura_metal_1044.png);
-      width: 100%;
-      padding-bottom: 1rem;
    
-   }
    body {
        background-color: #252422;
        max-width: 1400px;
@@ -24,13 +19,6 @@
        
    }
      
-    footer {
-        background-image: url(./img/textura_metal_1044.png) ;
-        text-align: center;
-        font-weight: var(--black);
-        font-size: var(--text-base);
-        max-height: fit-content;
-    }
     img {
         border-radius: 2px;
         width: 100%;
