@@ -11,7 +11,16 @@
     $spacing-medium: 4rem;
     $spacing-small: 2rem; 
     $spacing-xsmall: 1rem;
+    /*map spacings*/
+   
+    $spacings: (
+        spacing-large: 6rem,
+        spacing-medium: 4rem,
+        spacing-small: 2rem,
+        spacing-xsmall: 1rem,
+    );
 
+    
     /*Font Family*/
     $font-text: 'Poppins', sans-serif;
     $font-title:'Zilla Slab', serif;

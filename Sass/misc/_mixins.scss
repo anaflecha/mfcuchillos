@@ -1,0 +1,12 @@
+@mixin flex($dir, $just, $alg, $gap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $alg;
+    gap: $gap;
+}
+@mixin font ($type, $weight,$size) {
+    font-family: $type;
+    font-weight: $weight;
+    font-size: $size;
+}

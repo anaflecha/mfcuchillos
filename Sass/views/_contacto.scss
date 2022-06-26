@@ -1,73 +1,62 @@
 /* Forms*/
 .titulo__seccion {
-    font-size: $text-large;
-    font-weight: $bold;
-    padding: $spacing-small 0 $spacing-xsmall 0;
+    @include font ($font-title,$bold,$text-large);
+    padding-top: $spacing-small;
     border-bottom: solid 8px $primary;}
 .forms {
     background-color: $secondary;  
-    padding: $spacing-small;
+    padding: $spacing-small $spacing-large;
     display: block; 
     align-items: center;
   
      .forms__datos {
-    display: flex;
-    max-width: 1200vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content:flex-start ;
+    @include flex (column, space-evenly,stretch, 0);
     flex-wrap: nowrap;
-    padding: $spacing-large;
-    font-size: $text-medium;
-    font-weight: $bold;}  
+    padding: $spacing-small $spacing-large;
+    @include font ($font-text,$medium,$text-medium);
+     }
 
      .inputs {
     border-radius: 6px;
     border-color: $primary;
     background-color:$secondary;
-    gap: 2rem;
-    font-family:$font-text;
-    font-size: $text-xsmall;
+    @include font ($font-text,$medium,$text-xsmall);
     min-width: 40%;
     min-height: 4rem;
 }
      label {
-    font-size: $text-small;
-    font-weight: $bold;
+        @include font ($font-title,$medium,$text-small);
+  
 }
 
       .button {
-        font-size: $text-small;
-        font-weight: $bold;
+        @include font ($font-title,$bold,$text-small);
+        padding: 0.5rem;
         background-color: $active;
-        border-radius: 8px;
+        border-radius: 12px;
         border-color:$active;
-        max-width: 3.6em;
+        align-self: flex-end;
 
 } }
 
 .contacto {
     background-color:$secondary;
     display: block;
-    gap: 2rem;
-    padding: $spacing-small;
+    gap: $spacing-small;
+   padding-right: $spacing-large;
+   padding-left: $spacing-large;
     
     
 
 .contacto__datos {
-    flex: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 2rem;
-    padding: $spacing-small $spacing-medium;
+    @include flex (row, space-evenly, center,$spacing-small);
+    padding:$spacing-small $spacing-medium;
 }
 .contacto__datos {
     display: flex;
     align-items: center;
-    font-size: $text-medium;
-    font-family: $font-text;
-    font-weight:$medium ;
+    @include font ($font-text,$medium,$text-medium);
+    
 
 }
 .contacto__datos img {

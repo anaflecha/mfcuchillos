@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
     justify-content: center;
-    padding:$spacing-medium;
+    padding: $spacing-medium;
      .card1 {
         display: grid;
         align-self: center;
@@ -18,7 +18,7 @@
     } 
     .boxhome__item__text {
         font-size: $text-large;
-        padding: $spacing-medium;
+        padding:  $spacing-medium;
     }
     .imagen:nth-of-type(1) {
         grid-column: 1;
