@@ -3,10 +3,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: $spacing-small;
    
-/*.box:hover { 
-    transform: scale(1.2) translateX(13%) translateY(16%);
-   
-}*/
 .cards__box {
     @include flex(column,flex-start, center ,$spacing-small);
     background-color: #252422;
