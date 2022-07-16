@@ -45,24 +45,99 @@
     gap: $spacing-small;
    padding-right: $spacing-large;
    padding-left: $spacing-large;
-    
+   
     
 
 .contacto__datos {
     @include flex (row, space-evenly, center,$spacing-small);
     padding:$spacing-small $spacing-medium;
+    
+}
+.subtitulo {
+    text-decoration: none;
 }
 .contacto__datos {
     display: flex;
     align-items: center;
     @include font ($font-text,$medium,$text-medium);
     
-
 }
+
 .contacto__datos img {
     display: flex;
     flex-direction: row;
     max-width: 3rem;
     min-width: 1rem;
 }
+.contacto__datos:hover img:hover {
+   background-color: $active;
+    box-shadow: 2px 4px  8px 1px  $active;
 }
+
+@media screen and (max-width:780px) {
+    .titulo__seccion {
+        @include font ($font-title,$bold,$text-large);
+        padding-top: $spacing-small;
+        border-bottom: solid 8px $primary;}
+    .forms {
+        background-color: $secondary;  
+        padding: $spacing-small $spacing-small;
+        display: block; 
+        align-items: center;
+      
+         .forms__datos {
+        @include flex (column, space-evenly,stretch, 0);
+        flex-wrap: nowrap;
+        padding: $spacing-small $spacing-small;
+        @include font ($font-text,$medium,$text-medium);
+         }
+    
+         .inputs {
+        border-radius: 6px;
+        border-color: $primary;
+        background-color:$secondary;
+        @include font ($font-text,$medium,$text-small);
+        min-width: 40%;
+        min-height: 4rem;
+    }
+         label {
+            @include font ($font-title,$medium,$text-small);
+      
+    }
+    
+          .button {
+            @include font ($font-title,$bold,$text-small);
+            padding: 0.5rem;
+            background-color: $active;
+            border-radius: 12px;
+            border-color:$active;
+            align-self: flex-end;
+    
+    } }
+    
+    .contacto {
+        background-color:$secondary;
+        display: block;
+        padding: $spacing-small $spacing-small;
+       
+      
+    
+    .contacto__datos {
+        @include flex (row, space-evenly, center,$spacing-small);
+        padding:$spacing-small $spacing-xsmall;
+    }
+    .contacto__datos {
+        display: flex;
+        align-items: center;
+        @include font ($font-text,$medium,$text-small);
+        
+    
+    }
+    .contacto__datos img {
+        display: flex;
+        flex-direction: row;
+        max-width: 3rem;
+        min-width: 2rem;
+    }
+    }
+}}

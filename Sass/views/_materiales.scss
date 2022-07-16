@@ -12,7 +12,7 @@
 .materialcard {
     @extend .material;
     display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat( auto-fill, minmax( (min 260px,100%), 1fr));
     gap: $spacing-small;
     padding-top:  $spacing-small;
     
@@ -21,7 +21,7 @@
 .subtitulo {
     display: flex;
     flex-direction: column;
-    font-size: $text-medium;
+    font-size: $text-large;
     font-family: $font-title;
     font-weight: $bold;
     padding-bottom: $spacing-small;
@@ -31,6 +31,47 @@
     display: flex;
     flex-direction: column;
     font-family: $font-text;
-    font-size: $text-small;
+    font-size: $text-medium;
+    text-align: justify;
+    
+}
+}
+@media screen and (max-width:450px) {
+    .material {
+        padding: $spacing-small;
+         
+        .titulo__seccion {
+            font-size: $text-large;
+            font-weight: $bold;
+            padding:map-get($spacings, $spacing-small 0 $spacing-small 0);;
+            border-bottom: solid 8px $primary;}
+            
+    
+    .materialcard {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax( (min 260px,100%), 1fr));
+        gap: $spacing-xsmall;
+        padding-top:  $spacing-xsmall;
+        
+        
+    }
+    .subtitulo {
+        display: flex;
+        flex-direction: column;
+        font-size: $text-medium;
+        font-family: $font-title;
+        font-weight: $bold;
+        padding-bottom: $spacing-small;
+        
+    }
+     p {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-text;
+        font-size: $text-small;
+        text-align: justify;
+        
+  
+}
 }
 }

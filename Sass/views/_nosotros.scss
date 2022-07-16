@@ -16,3 +16,25 @@
    padding: $spacing-small;
 }
 }
+@media screen and (max-width:450px) {
+    .nosotros {
+        padding: $spacing-small;
+    
+        .titulo__seccion {
+            font-size: $text-large;
+            font-weight: $bold;
+           
+            border-bottom: solid 8px $primary;}
+        .contacto {
+            padding: $spacing-xsmall;
+        }
+    
+            p {
+        display: block;
+        font-size: $text-small;
+        font-family: $font-text;
+        text-align: justify;
+       
+}
+}
+}

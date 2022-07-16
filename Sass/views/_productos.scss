@@ -9,11 +9,14 @@
 }*/
 .cards__box {
     @include flex(column,flex-start, center ,$spacing-small);
-    transition: 45ms;
     background-color: #252422;
     padding: $spacing-small;
 }
  .box__info { 
     @include font ($font-text,$medium,$text-base);
+}
+.cards__img :hover {
+    opacity: 90%;
+    transform: scale(105%,105%);
 }
 }

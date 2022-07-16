@@ -1,4 +1,4 @@
-.boxhome {
+/*.boxhome {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
@@ -40,4 +40,64 @@
         grid-row: 2;
       
     }
+}*/
+.boxhome {
+  display: flex;
+  margin: $spacing-large;
+  flex-wrap: nowrap;
+  flex-direction: column;
+   
+  .imagen {
+    min-width: 320px;
+  }
+  
+  .boxhome__item__text {
+    @include font ( $font-title, $bold, $text-large);
+
+  }
+  
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: $spacing-medium;
+
+  }
+  .card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: $spacing-medium;
+
+  }
+  
+
 }
+@media screen and (max-width:780px) {
+   .boxhome {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        flex-direction: column;
+        padding-top: $spacing-small;
+        padding-bottom: $spacing-small;
+    .card1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: $spacing-medium;}
+    
+      
+      .card2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: $spacing-medium;
+        padding-top: $spacing-small;}
+      }
+      }
+    
+
